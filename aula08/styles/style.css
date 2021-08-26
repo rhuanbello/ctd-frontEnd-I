@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+  
+}
+
+/* First Section - Description */
+
+section.media-picture {
+    width: 100%;
+    background: url('../assets/moviebg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.movie-container {
+    padding-left: 50px;
+    position: absolute;
+    bottom: 0%;
+}
+
+.movie-container p:nth-child(1) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #921818;
+}
+
+.movie-container h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 54px;
+    color: white;
+}
+
+.movie-container p:last-child {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #746E6E;
+    margin: 5px 0 20px 0;
+}
+
+/* Second Section - Review */
+
+section.review {
+    padding: 50px 200px;
+    line-height: 1.5;
+}
+
+section.review p {
+    margin-bottom: 40px;
+    color: #bdbdbd;
+    font-family: Roboto;
+}
+
+section.review a {
+    font-family: roboto;
+    background-color: #FEC63E;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
