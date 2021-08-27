@@ -11,10 +11,12 @@ body {
 
 .color-grey {
     color: rgba(255, 255, 255, 0.6);
+
 }
 
 .container {
     padding-left: 64px;
+
 }
 
 /* HEADER */
@@ -22,6 +24,7 @@ body {
 .page-title {
     color: rgb(236, 54, 78);
     margin-bottom: 6px; 
+
 }
 
 /* SECTION */
@@ -59,18 +62,33 @@ body {
 
 .video-time {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     width: fit-content;
     float: right;
-    padding: 8px 12px;
+    padding: 4px;
     display: block;
-    transform: translateY(-35px);
+    margin-right: 5px;
+    transform: translateY(-30px);
+    font-size: 12px;
+
+}
+
+.video-details {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.video-channel {
+    margin: 8px 12px 0 0;
+    clip-path: circle();
 
 }
 
 .video-title {
     margin: 8px 0 12px;
     color: white;
+    
 }
 
 .video-views {
