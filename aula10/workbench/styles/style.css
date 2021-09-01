@@ -19,15 +19,8 @@ main.banner {
 
 }
 
-h1, h2 {
+h1 {
     font-weight: normal;
-
-}
-
-h2 {
-    margin-top: 5px;
-    font-size: 18px;
-    font-style: italic;
 
 }
 
@@ -44,6 +37,18 @@ figure {
 figure:hover {
     transform: scale(1.01);
 
+}
+
+figure h2 {
+    display: inline-block;
+    background-color: rgba(32, 54, 71, .7);
+
+    margin-top: 340px;
+    padding: 10px;
+
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
 }
 
 a button {
