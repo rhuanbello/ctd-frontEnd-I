@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 200vh;
+    overflow-x: hidden;
+    
+}
+
+.box {
+    /* Any size here will be responsive with the content elements inside and the positioning */
+    height: 250px;
+    width: 250px;
+    
+    /* Styling */
+    border-radius: 5px;
+    background-color:#214C63;
+    border: 5px solid #627ECB;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.son {
+    /* Son-box will always be 60% of the parent box size */
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    /* Styling */
+    transform: translate(-50%, -50%);
+    border: 5px solid #627ECB;
+    background-color:#CAD3C8;
+    border-radius: 50%;
+
+}
+
+.box.first {
+    /* Code below has no use in this case */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+
+.box.second {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+
+    /* Removing the box-size of the positioning left property */
+    transform: translateX(-50%);
+
+}
+
+.box.third {
+    position: absolute;
+    right: 0;
+    top: 0;
+  
+}
+
+p.text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    
+    /* Removing the box-size of both positioning properties */
+    transform: translate(-50%, -50%);
+    
+
+    /* Styling */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    color:rebeccapurple;
+    text-align: center;
+
+}
+
+/* Bonus */
+
+@keyframes barrelRoll{
+    /* Creating a transform rotate animation from 0 to 360 degree at hover */
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+
+.box.first:hover, .box.third:hover {
+    /* Applying the animation and setting the flow */
+    animation: barrelRoll 1s infinite linear;
+    
+}
+
+.box.second.bye {
+    /* Making Box-1 be in Front of Box-2 */
+    z-index: 1;
+    transition: 1s;
+    
+}
+
+.box.second.bye:hover {
+    /* Positioning Box-1 to the left at hover for Box-2 Appear */
+    transform: translateX(60%)
+   
+}
