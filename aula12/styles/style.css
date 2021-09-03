@@ -78,7 +78,7 @@ header nav.top .search input::placeholder {
 /* Header Nav Bottom */
 
 header nav.bottom {
-    padding: 1rem 17rem .8rem 17rem;
+    padding: 1rem 0 .8rem 17rem;
     display: flex;
     align-items: center;
 
@@ -93,7 +93,7 @@ header nav.bottom .container {
 
 header nav.bottom .container .local {
     display: flex;
-    margin-right: 10.7rem;
+    margin-right: 10.5rem;
 
 }
 
@@ -193,7 +193,7 @@ main section header.payment .container {
 }
 
 main section header.payment .container p {
-    margin-right: 5rem;
+    margin-right: 4rem;
     font-size: 1.8rem;
     color: #333;
 
