@@ -8,7 +8,7 @@ You can access it with this [link.](https://clonemercadolivre.vercel.app/)
 
 ---
 
-![Untitled](Mercado%20Libre%20Homepage%20e0ad49ad30ab43b3ae429fa71a45f080/Untitled.png)
+![Untitled](https://i.imgur.com/5jSS0sJ.png)
 
 ---
 
