@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    --primaryColor: #000;
+    --secondaryColor: #f5f4f4;
+    --terciaryColor: #191970;
+
+    --textLight: rgba(0, 0, 0, .5);
+    --textLighter: #fff;
+
+    --textDark: rgb(128, 126, 126);
+    --textDarker: rgba(0, 0, 0, .7);
+
+}
+
+body {
+
+
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+
+}
+
+main {
+    padding: 50px 50px;
+    background-color: var(--secondaryColor);
+
+}
+
+main .title {
+    text-align: center;
+    
+}
+
+main .title h1 {
+    color: var(--terciaryColor);
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+main .title p {
+    color: var(--textLight);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+main section {
+    margin-top: 50px;
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+main section .informations {
+    padding: 60px 50px 20px 50px;
+    background-color: var(--terciaryColor);
+    border-radius: 10px;
+
+}
+
+main section .informations h2 {
+    color:var(--secondaryColor);
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 15px;
+
+}
+
+main section .informations p {
+    color:var(--textLighter);
+    font-size: 18px;
+    margin-bottom: 50px;
+    width: 430px;
+
+}
+
+main section .informations a {
+    color:var(--secondaryColor);
+    display: block;
+    margin-bottom: 30px;
+    
+
+}
+
+main section .informations a i {
+    width: 24px;
+    font-size: 24px;
+    color:var(--secondaryColor);
+    margin-right: 20px;
+}
+
+main section .informations .social {
+    margin-top: 150px;
+
+}
+
+main section .informations .social a {
+    display: inline-block;
+    width: 28px;
+    border-radius: 50%;
+    text-align: center;
+    /* background-color: #fff; */
+    margin-right: 10px;
+    transition: .2s;
+}
+
+main section .informations .social a:hover {
+    background-color: #000;
+}
+
+main section .informations .social a i {
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* Form */
+
+main section .formulario form label {
+    font-size: 14px;
+    font-weight: 500;
+    color:var(--terciaryColor);
+    
+    
+}
+
+main section .formulario form .container {
+    display: flex;
+    padding: 20px 20px 0 40px;
+
+}
+
+main section .formulario form .container input {
+    outline: none;
+    border: none;
+    color: var(--textDarker);
+    border-bottom: 1px solid var(--terciaryColor);
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+main section .formulario form .container .select label {
+    margin-bottom: 10px;
+
+}
+
+main section .formulario form .container .select select {
+    padding: 5px;
+    outline: none;
+    color: var(--textDarker);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+main section .formulario form .container .message label {
+  
+    color:var(--terciaryColor);
+    margin-bottom: 5px;
+}
+
+main section .formulario form .container textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--terciaryColor);
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--textDarker);
+    resize: none;
+}
+
+main section .formulario form .container .label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 40px;
+    
+}
+
+main section .formulario form .container.button {
+    margin-top: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+
+main section .formulario form .container.button button {
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    margin-right: 20px;
+    color:var(--secondaryColor);
+    border: 1px solid #000;
+    border-radius: 5px;
+    
+}
+
+
+main section .formulario form .container.button button[type="reset"] {
+    background-color: #fff;
+    color: #000;
+   
+}
+
+
+main section .formulario form .container.button button[type="submit"] {
+    background-color:var(--terciaryColor);
+    
+}

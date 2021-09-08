@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/fb4d127565.js" crossorigin="anonymous"></script>
+    <title>Formulário</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="title">
+            <h1>Contact Us</h2>
+            <p>Any Questions or remarks? Just write us a message!</p>
+        </div>
+
+        <section>
+
+            <div class="informations">
+                <h2>Contact Information</h2>
+                <p>Fill up the form and our Team will get back to you within 24 hours</p>
+    
+             
+                    <a href="" target="_blank">
+                        <i class="fas fa-phone-alt"></i>
+                        +55 (21) 96889-2704
+                    </a>
+           
+                    <a href="" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                        rhuambello@gmail.com
+                    </a>
+             
+    
+                    <a href="" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Rio de Janeiro - Brasil
+                    </a>
+         
+                    <div class="social">
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+
+            </div>
+    
+            <div class="formulario">
+                <form action="POST">
+    
+                    <div class="container name">
+                        <div class="label firstname">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname">
+                        </div>
+
+                        <div class="label secondname">
+                            <label for="secondname">Second Name</label>
+                            <input type="text" name="secondname" id="secondname">
+                        </div>   
+                    </div>
+
+                    <div class="container contact">
+                        <div class="label mail">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="label phone">
+                            <label for="phone">Phone</label>
+                            <input type="number" name="phone" id="phone" >
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="label select">
+                            <label for="selecione">Which service do you need?</label>
+                            <select name="selecione" id="selecione">
+                                <option value="web-design">Web Design</option>
+                                <option value="web-developmente">Web Development</option>
+                                <option value="user-experience-writing">User Experience Writing</option>
+                                <option value="user-interface-design">User Interface Design</option>
+                                <option value="logo-design">Logo Design</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="label message">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Write your message..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="container button">
+                        <button type="reset">Cancel</button>
+                        <button type="submit">Send Message</button>
+                    </div>
+    
+                </form>
+            </div>
+    
+        </section>
+       
+    </main>
+    
+    
+</body>
+</html>
