@@ -19,11 +19,10 @@ html {
     --textDark: rgb(128, 126, 126);
     --textDarker: rgba(0, 0, 0, .7);
 
+    --iconColors: purple;
 }
 
 body {
-
-
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -98,7 +97,7 @@ main section .informations a {
 main section .informations a i {
     width: 24px;
     font-size: 24px;
-    color:var(--secondaryColor);
+    color: var(--iconColors);
     margin-right: 20px;
 }
 
@@ -108,22 +107,24 @@ main section .informations .social {
 }
 
 main section .informations .social a {
-    display: inline-block;
-    width: 28px;
-    border-radius: 50%;
+    display: inline;
     text-align: center;
-    /* background-color: #fff; */
     margin-right: 10px;
-    transition: .2s;
+    
 }
 
-main section .informations .social a:hover {
-    background-color: #000;
-}
 
 main section .informations .social a i {
     font-size: 18px;
-    padding: 5px;
+    display: inline;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+main section .informations .social a i:hover {
+    background-color:var(--iconColors);
 }
 
 /* Form */
@@ -146,12 +147,18 @@ main section .formulario form .container input {
     outline: none;
     border: none;
     color: var(--textDarker);
-    border-bottom: 1px solid var(--terciaryColor);
+    border-bottom: 1.5px solid rgb(168, 167, 167);;
     padding-bottom: 5px;
     font-size: 14px;
     line-height: 2;
     font-weight: 500;
 }
+
+main section .formulario form .container input:focus {
+    border-bottom: 1.5px solid var(--iconColors);
+}
+
+
 
 main section .formulario form .container .select label {
     margin-bottom: 10px;
@@ -164,12 +171,19 @@ main section .formulario form .container .select select {
     color: var(--textDarker);
     font-weight: 500;
     font-size: 14px;
+
 }
 
 main section .formulario form .container .message label {
-  
     color:var(--terciaryColor);
     margin-bottom: 5px;
+    
+}
+
+/* Removing Arrows of Input Type Number */
+main section .formulario form .container .phone input[type=number]::-webkit-inner-spin-button { 
+    appearance: none;
+    
 }
 
 main section .formulario form .container textarea {
@@ -205,20 +219,25 @@ main section .formulario form .container.button button {
     outline: none;
     margin-right: 20px;
     color:var(--secondaryColor);
-    border: 1px solid #000;
-    border-radius: 5px;
     
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 
 main section .formulario form .container.button button[type="reset"] {
     background-color: #fff;
     color: #000;
-   
+    border: 1px solid #000;
 }
-
 
 main section .formulario form .container.button button[type="submit"] {
     background-color:var(--terciaryColor);
+  
+}
+
+main section .formulario form .container.button button[type="submit"]:hover {
+    background-color:var(--iconColors);
     
 }
