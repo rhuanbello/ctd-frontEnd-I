@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    --primaryColor: #000;
+    --secondaryColor: #f5f4f4;
+    --terciaryColor: #191970;
+
+    --textLight: rgba(0, 0, 0, .5);
+    --textLighter: #fff;
+
+    --textDark: rgb(128, 126, 126);
+    --textDarker: rgba(0, 0, 0, .7);
+
+    --iconColors: purple;
+
+}
+
+header {
+    background-color: #000;
+    
+}
+
+main .container {
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+header img {
+    padding: 1rem 0;
+    
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0 auto;
+
+}
+
+/* Main */
+
+main {
+    padding: 5rem 0;
+    /* background-color: var(--secondaryColor); */
+    /* background-color:thistle; */
+
+}
+
+main h1 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+
+ 
+}
+
+fieldset .required {
+    font-size: 12px;
+    
+}
+
+span {
+    color: var(--terciaryColor);
+}
+
+form label {
+    font-size: 16px;
+    font-weight: 500;
+    color:var(--terciaryColor);
+    margin-bottom: 5px;
+    
+}
+
+form .content {
+    display: flex;
+    padding: 20px 0;
+
+}
+
+form .content input {
+    outline: none;
+    color: var(--textDarker);
+    border: 1.5px solid rgb(168, 167, 167);
+    border-radius: 5px;
+   
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+
+}
+
+form .content input:focus {
+    border: 1.5px solid var(--iconColors);
+
+}
+
+
+form .content .select label {
+    margin-bottom: 10px;
+
+}
+
+form .content select {
+    padding: 5px;
+    outline: none;
+    color: var(--textDarker);
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+form .content .label.type {
+    display: inline;
+
+}   
+
+form .content .label.type p {
+    font-weight: 500;
+    color:var(--terciaryColor);
+    margin-bottom: 10px;
+
+}   
+
+form .content .label.type label {
+    color: var(--textDarker);
+    font-size: 14px;
+    margin: 0 10px 0 5px;
+    
+}
+
+form .content .phone input[type=number]::-webkit-inner-spin-button { 
+    appearance: none;
+    
+}
+
+form .content textarea {
+    outline: none;
+    border: 1px solid var(--terciaryColor);
+    border-radius: 5px;
+    padding: 5px 0 5px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--textDarker);
+    resize: none;
+}
+
+form .content.instructions p {
+    font-weight: 500;
+    color:var(--terciaryColor);
+    margin-bottom: 10px;
+
+}   
+
+form .content.instructions .payment label {
+    display: inline;
+    color: var(--textDarker);
+    font-size: 14px;
+    
+    
+}
+
+form .content .label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 40px;
+    
+}
+
+form .content.button {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    
+}
+
+
+form .content.button button {
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    margin-right: 20px;
+    color:var(--secondaryColor);
+    
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+   
+}
+
+form .content.button button[type="reset"] {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+form .content.button button[type="submit"] {
+    background-color:var(--terciaryColor);
+    padding: 0px 50px;
+  
+}
+
+form .content.button button[type="submit"]:hover {
+    background-color:var(--iconColors);
+    
+}
