@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos e Pseudo-classes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <article>
+
+        <h1>Pseudo-classes</h1>
+
+            <!-- Hover -->
+            <h2 class="code">:hover</h2>
+            <p>A Pseudo Classe <span class="code">:hover</span> é utilizada para alterar o estilo de um elemento quando o usuário posiciona o cursor.</p>
+            <h3>Exemplo:</h3>
+
+            <a href="#">Botão</a>
+            <small>Nota-se que a cor de fundo do botão se altera quando posicionamos o cursor sob o elemento.</small>
+
+        <hr>
+
+            <!-- Focus -->
+            <h2 class="code">:focus</h2>
+            <p>A Pseudo-Classe <span class="code">:focus</span> do CSS é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse.</p>
+            <h3>Exemplo:</h3>
+            
+            <input type="text">
+            <small>Nota-se que ao clicar em cima do campo, a cor da borda do elemento é alterada.</small>
+
+        <hr>
+
+            <!-- Disabled -->
+            <h2 class="code">:disabled</h2>
+            <p>A Pseudo-Classe <span class="code">:disabled</span> do CSS é aplicada para indicar que um elemento está desabilitado pelo atributo <i>disabled</i>, no qual não pode ser ativado nem aceitar foco.</p>
+            <h3>Exemplo:</h3>
+            
+            <input type="text" disabled>
+            <small>Temos um input com o atributo disabled inserido, podemos utilizá-lo como pseudo-classe de nosso elemento para estilizar de forma que identifique visualmente para o usuário.</small>
+
+        <hr>
+
+            <!-- Enabled -->
+            <h2 class="code">:enabled</h2>
+            <p>A Pseudo-Classe <span class="code">:enabled</span> do CSS é aplicada para qualquer elemento ativado. Um elemento é ativado se puder ser ativado (selecionado, clicado, digitado etc.) ou aceitar o foco.</p>
+            <h3>Exemplo:</h3>
+            
+            <input type="text">
+            <small>Se o um elemento não possui o atributo disabled, ele automaticamente é um elemento enabled.</small>
+
+        <hr>
+
+            <!-- Checked -->
+            <h2 class="code">:checked</h2>
+            <p>A Pseudo-Classe <span class="code">:checked</span> do CSS é aplicada para um elemento radio, checkbox ou option que está marcada ou alternado para um estado ligado.
+            <h3>Exemplo:</h3>
+
+            <label>
+                <input type="checkbox" id="checkbox">
+                <span>Sou um checkbox</span>
+            </label>
+        
+            <small>Podemos notar que a cor do label é alterada quando a checkbox é ativada.</small>
+
+        <hr><br>
+
+        <h1>Pseudo-elementos</h1>
+
+            <!-- First-letter -->
+            <h2 class="code">::first-letter</h2>
+            <p>O Pseudo elemento <span class="code">::first-letter</span> é utilizada para selecionar a primeira letra da primeira linha de um bloco (se não for procedido por qual outro conteúdo como imagens ou tabelas)</p>
+            <h3>Exemplo:</h3>
+
+            <p class="first-letter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis itaque et cumque alias</p>
+
+        <hr>
+
+            <!-- Selection -->
+            <h2 class="code">::selection</h2>
+            <p>O Pseudo elemento <span class="code">::selection</span> é utilizada para partes do documento que foram selecionadas pelo usuário (tal como clicar e arrastar o ponteiro do mouse através de um texto.</p>
+            <h3>Exemplo:</h3>
+
+            <p class="selection">Selecione este texto</p>
+
+        <hr>
+
+            <!-- Marker -->
+            <h2 class="code">::marker</h2>
+            <p>O Pseudo elemento <span class="code">::marker</span> é utilizada para </p>
+            <h3>Exemplo:</h3>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+
+        <hr>
+
+            <!-- Placeholder -->
+            <h2 class="code">::placeholder</h2>
+            <p>O Pseudo elemento <span class="code">::placeholder</span> é utilizada para selecionar o atributo placeholder e estilizar seu conteudo. Por padrão o texto placeholder possui a cor cinza.</p>
+            <h3>Exemplo:</h3>
+
+            <input type="text" placeholder="Sou um placeholder">
+            <small>Nota-se que a cor do placeholder foi estilizada para vermelho.</small>
+
+        <hr>
+        
+    </article>
+
+    <footer>
+       <p>Made with 💛 by Rhuan, inspired by Notion.</p>
+       <div class="social-media">
+           <a href="https://github.com/rhuanbello" target="_blank"><img src="assets/github.svg" alt=""></a>
+           <a href="https://www.linkedin.com/in/rhuanbello/" target="_blank"><img src="assets/linkedin.svg" alt=""></a>
+       </div>
+    </footer>
+
+
+</body>
+</html>
