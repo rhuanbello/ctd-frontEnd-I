@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: 'Soccer League';
+    src: url(../assets/fonts/SoccerLeagueCollege-Italic.ttf);
+   
+}
+@font-face {
+    font-family: 'Soccer League Normal';
+    src: url(../assets/fonts/SoccerLeague.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: #8EC1DA;
+    
+    overflow-x: hidden;
+    
+}
+
+header.cloud {
+    background-image: url('../assets/clouds.svg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: -50px;
+    animation: clouds 30s linear infinite;
+}
+
+header .cloud img{
+    width: 100%;
+}
+
+
+section button {
+    font-family: 'Soccer League Normal';
+    font-size: 18px; 
+    letter-spacing: 2px;
+    position: absolute;
+    left: 45%;
+    bottom: 45%;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.ball {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 47%;
+    bottom: 0;
+   
+}
+
+main.soccer-game .goalpost {
+    height: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .2s .2s;
+}
+
+section button:hover {
+    transform: scale(1.3);
+}
+
+section button:focus {
+    transform: skew(10deg) translateX(-10px) scale(1.3);
+    letter-spacing: 5px;
+    
+}
+
+section button:focus ~ .ball {
+    animation: kick 1.7s linear forwards;
+    
+}
+
+section button:focus ~ .goalpost {
+    transform: skew(1deg)
+    
+}
+
+
+
+/* Play Game Screen 1 */
+
+main.play-game {
+    background-color: #8EC1DA;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  
+}
+
+main.play-game.hidden{
+    opacity: 0;
+    visibility: hidden;
+    /* z-index: -99; */
+}
+
+
+
+main.play-game .btn-start {
+    font-family: 'Poppins';
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+
+main.play-game .btn-start:hover {
+    transform: scale(1.2);
+    background-color: tomato;
+    text-transform: uppercase;
+
+}
+
+main.play-game h1 {
+    font-family: 'Soccer League';
+    font-weight: 400;
+    font-size: 72px;
+    margin-top: 100px;
+}
+
+/* Loading Game Screen 1.5 */
+
+main.loading-game {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+main.loading-game.show{
+    animation: appear .5s forwards;
+    z-index: 2;
+    
+}
+
+main.loading-game h1 {
+    font-family: 'Poppins';
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+
+main.loading-game progress {
+    margin-bottom: 50px;
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+::-webkit-progress-bar{
+    background-color: #fff;
+
+}
+
+::-webkit-progress-value{
+    background-color: tomato;
+}
+
+/* Screen 3 */
+
+main.soccer-game {
+    background-image: url('../assets/stadium.jpg');
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    padding-top: 100px;
+    position: absolute;
+    border-bottom: 50px solid #167631;
+    border-radius: 10px;
+    height: 400px;
+    width: 90%;
+    opacity:  0;
+    visibility: hidden;
+    
+}
+
+main.soccer-game.show {
+    z-index: 99;
+    animation: slider 1s forwards;
+
+}
