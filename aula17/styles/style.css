@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;  
-
+    text-decoration: none;
 }
 
 :root { 
@@ -32,6 +32,11 @@ body::-webkit-scrollbar-thumb {
     
 }
 
+.hide {
+    display: none !important;
+}
+
+
 /* Header Topo */
 
 header.top {
@@ -58,7 +63,7 @@ header.top .menu {
 }
 
 header.top .menu:hover {
-    border: 1px solid #7F7F7F;
+    background-color: #383838;
     filter: brightness(100%)
 }
 
@@ -74,8 +79,7 @@ header.top .container {
 }
 
 header.top .logo{
-    width: 10.7rem;
-    height: 3.2rem;
+    width: 9rem;
 
 }
 
@@ -197,25 +201,27 @@ main.container aside.menu ul li {
     align-items: center;
     padding: 1.8rem 1.35rem 1.4rem;
     cursor: pointer;
-    filter: brightness(80%)
+
 
 }
 
 main.container aside.menu ul li:hover {
-    filter: brightness(100%);
-    transform: scale(1.01);
-    
+    background-color: #383838;
 }
 
 
-main.container aside.menu ul li img {
+main.container aside.menu ul li svg {
     margin-bottom: .9rem;
-    
+    pointer-events: none; 
+    display: block; 
+    width: 2.5rem; 
+    height: 2.5rem;
 }
 
 main.container aside.menu ul li p {
     font-size: 1rem;
     font-weight: 300;
+    color: #fff;
 }
 
 /* End Aside */
@@ -305,6 +311,37 @@ main.container section main.content .container-video:first-child {
 
 }
 
+/* Video */
+.container-video .container-cover img:nth-child(2) {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    height: 98%;
+
+}
+
+/* Thumbnail */
+.container-video .container-cover img:nth-child(1):hover {
+    position: relative;
+    animation: fade 1s forwards .1s;
+
+}   
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        z-index: -2;
+        opacity: 0;
+    }
+
+}
+
+
+
+/* Time */
 .container-video .container-cover > span {
     padding: .3rem .4rem;
     background-color: rgba(0, 0, 0, 0.644);
@@ -398,15 +435,35 @@ main.container aside.menu-show ul li:first-child p{
 
 main.container aside.menu-show ul li p {
     font-size: 1.4rem;
-    
+    color: #fff
 }
 
-main.container aside.menu-show ul li img {
-    width: 1.6rem;
-    margin-right: 2.5rem;
+main.container aside.menu-show ul li svg {
+    margin-right: 2.5rem; 
+    pointer-events: none; 
+    display: block; 
+    width: 2.5rem; 
+    height: 2.5rem;    
 }
 
 
-.hide {
-    display: none;
+
+section.content-video {
+    width: 90%;
+    margin: 2rem auto;
+    border-bottom: 1px solid #ffffff1a;
 }
+
+section.content-video h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+section.content-video p {
+    margin: 1.5rem 0 2rem;
+    color: #aaaaaa;
+    font-size: 1.4rem;
+}
+
+
