@@ -180,9 +180,8 @@ header.top .right .icon:last-child img {
 
 main.container {
     display: flex;
-    height: 100%;
+    min-height: 100%;
     
-
 }
 
 /* Main Aside */
