@@ -1,0 +1,42 @@
+@keyframes showField {
+    from {
+        transform: translate(-75px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-150px);
+    }
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        
+        transform: translateX(0px);
+    }
+}
+
+@keyframes showButton {
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}

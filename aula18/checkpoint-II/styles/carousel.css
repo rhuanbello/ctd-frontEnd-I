@@ -1,0 +1,168 @@
+.carousel-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80vw;
+    height: 70vh;
+
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.slider {
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+.slides {
+
+    display: flex;
+
+    width: 500%;
+
+}
+
+.slides input {
+
+    display: none;
+
+}
+
+.slide {
+
+    position: relative;
+
+    width: 20%;
+
+    transition: 2s;
+
+}
+
+.slide img {
+
+    position: absolute;
+    top: -80px;
+    left: 0;
+
+    width: 100%;
+    height: 50vw;
+    
+}
+
+/* MANUAL SLIDE NAVIGATION */
+
+.navigation-manual {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 40px;
+
+    width: 80vw;
+    height: 40px;
+
+}
+
+.manual-btn {
+
+    padding: 5px;
+
+    border: 2px solid var(--clr-highlight-dark);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child) {
+
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover {
+
+    background-color: var(--clr-highlight-dark);
+
+}
+
+#radio1:checked ~ .first {
+
+    margin-left: 0;
+
+}
+
+#radio2:checked ~ .first {
+
+    margin-left: -20%;
+
+}
+
+#radio3:checked ~ .first {
+
+    margin-left: -40%;
+
+}
+
+/* AUTOMATIC SLIDE NAVIGATION */
+
+/* .navigation-auto {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 40px;
+
+    width: 80vw;
+    height: 40px;
+
+}
+
+.navigation-auto div {
+
+    padding: 5px;
+
+    border: 2px solid var(--clr-highlight-dark);
+    border-radius: 10px;
+
+    transition: 1s;
+
+}
+
+.navigation-auto div:not(:last-child) {
+
+    margin-right: 40px;
+
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+
+    background-color: var(--clr-highlight-dark);
+
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+
+    background-color: var(--clr-highlight-dark);
+
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+
+    background-color: var(--clr-highlight-dark);
+
+} */

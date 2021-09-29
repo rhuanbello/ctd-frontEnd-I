@@ -14,6 +14,12 @@
 
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 body {
     background-color: #13131F;
     font-size: 1.6rem;
@@ -24,7 +30,7 @@ body {
                 'banner banner banner banner banner' auto
                 'main main main main aside' auto
                 'footer footer footer footer footer' auto
-                / 16rem 1fr 1fr 1fr 16rem; 
+                / 1fr 2fr 2fr 2fr 1fr; 
 }
 
 header {
@@ -297,10 +303,12 @@ aside .banner {
     font-family: 'Lexend Deca', sans-serif;
 
     margin-bottom: 5.7rem;
+    width: 100%;
 }
 
 aside .banner img {
     height: 100%;
+    max-width: 100%;
 }
 
 aside .banner a {
